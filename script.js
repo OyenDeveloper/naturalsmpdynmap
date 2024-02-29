@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    iframe.src = "http://earthmap.naturalsmp.xyz:8123/";
+    iframe.src = "http://earthmapwebview.naturalsmp.xyz:8123/";
 
     enterFullscreen();
 });
