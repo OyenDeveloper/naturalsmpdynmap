@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NaturalSMP | EarthMap</title>
+    <title>GitHub Pages Dynmap Viewer</title>
     <style>
         body {
             margin: 0;
@@ -15,27 +15,8 @@
             border: none;
         }
     </style>
-    <script>
-        // Fungsi untuk masuk ke mode layar penuh
-        function toggleFullScreen() {
-            var iframe = document.getElementById('dynmap-iframe');
-            if (!document.fullscreenElement) {
-                iframe.requestFullscreen().catch(err => {
-                    console.error('Tidak dapat memasuki mode layar penuh:', err);
-                });
-            } else {
-                document.exitFullscreen();
-            }
-        }
-    </script>
 </head>
 <body>
     <iframe id="dynmap-iframe" src="http://earthmapwebview.naturalsmp.xyz:8123/" frameborder="0"></iframe>
-    <script>
-        // Masukkan ke mode layar penuh saat laman dimuat
-        window.onload = function() {
-            toggleFullScreen();
-        };
-    </script>
 </body>
 </html>
